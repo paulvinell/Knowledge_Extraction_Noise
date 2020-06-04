@@ -50,11 +50,11 @@ def main():
     teacher.evaluate(x_test, y_test)
     student.evaluate(x_test, y_test)
 
-    for i in range(1, 25):
+    for i in range(1, 10):
         print("Round {}".format(i))
         for j in range(30):
             print("Batch {}/{}".format(j+1, 30))
-            train_adversarial_noise(x_train[0].shape, student, teacher)
+            train_adversarial_noise_step(x_train[0].shape, student, teacher)
 
         student.evaluate(x_val, y_val)
 

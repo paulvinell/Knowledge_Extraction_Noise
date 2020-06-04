@@ -9,7 +9,7 @@ Inspired by knowledge distillation, which involves teaching a model (student mod
 The point is not to merely copy the weights, it is just about achieving the same decision boundaries.
 
 **Does it work?**  
-No. But the code might be fun to look at anyway.
+[It depends](https://paulvinell.github.io/research/2020/06/01/knowledge-extraction-noise.html); it often decreases validation loss a little (before increasing it), sometimes it can increase validation accuracy. Despite the fact that it doesn't work particularly well, the code might be fun to look at anyway.
 
 **How does it work?**  
 There are two training variants in the code.
